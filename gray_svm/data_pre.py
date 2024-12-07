@@ -11,17 +11,25 @@ import shutil
 base_image_path = "/Users/mac/Desktop/TAMU/2024 FALL/ECEN 649 Pattern Reg/Project/"
 
 # import datasets 
-target_folder = '/Users/mac/Desktop/TAMU/2024 FALL/ECEN 649 Pattern Reg/Project/gray_svm/Calc_Training_Images'
+target_folder = '/Users/mac/Desktop/TAMU/2024 FALL/ECEN 649 Pattern Reg/Project/Calc_Test_Images'
 os.makedirs(target_folder, exist_ok=True)
 
 # import csv
 csv_file_path = '/Users/mac/Desktop/TAMU/2024 FALL/ECEN 649 Pattern Reg/Project/CBIS-DDSM/csv/dicom_info.csv'
 dicom_data = pd.read_csv(csv_file_path)
 
+"""
 # PatientID which start with Calc-Training"
 calc_training_images = dicom_data[dicom_data['PatientID'].str.startswith('Calc-Training', na=False) & 
-                                  (dicom_data['SeriesDescription'] == 'full mammogram images')]
+                                 (dicom_data['SeriesDescription'] == 'full mammogram images')]
 
+# PatientID which start with Calc-Training"
+calc_training_images = dicom_data[dicom_data['PatientID'].str.startswith('Calc-Test', na=False) & 
+                                 (dicom_data['SeriesDescription'].notna()) &
+                                 (dicom_data['SeriesDescription'] != '')]
+"""
+calc_training_images = dicom_data[dicom_data['PatientID'].str.startswith('Calc-Test', na=False)]
+#%%%
 stored_count = 0
 
 # Copy images to new file

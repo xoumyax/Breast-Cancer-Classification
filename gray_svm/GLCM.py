@@ -7,13 +7,13 @@ from skimage.color import rgb2gray
 import matplotlib.pyplot as plt
 
 # Load the image and convert it to grayscale
-input_folder = '/Users/mac/Desktop/TAMU/2024 FALL/ECEN 649 Pattern Reg/Project/gray_svm/test'
-output_csv = "/Users/mac/Desktop/TAMU/2024 FALL/ECEN 649 Pattern Reg/Project/gray_svm/test/glcm_features.csv"
+input_folder = '/Users/mac/Desktop/TAMU/2024 FALL/ECEN 649 Pattern Reg/Project/gray_svm/HE_imag'
+output_csv = "/Users/mac/Desktop/TAMU/2024 FALL/ECEN 649 Pattern Reg/Project/gray_svm/test/glcm_features_135deg.csv"
 
 # Define parameters for GLCM
 distances = [1]  # D = 1
-angles = [0, np.pi/4, np.pi/2, 3*np.pi/4]  # Θ = 0°, 45°, 90°, 135°
-
+#angles = [0, np.pi/4, np.pi/2, 3*np.pi/4]  # Θ = 0°, 45°, 90°, 135°
+angles = [3*np.pi/4]
 all_features = []
 
 # Function to normalize GLCM
