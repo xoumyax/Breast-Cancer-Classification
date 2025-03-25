@@ -45,7 +45,7 @@ The CBIS-DDSM (Curated Breast Imaging Subset of the Digital Database for Screeni
 
 ## Workflow
 This is the workflow diagram for the breast cancer classification process:
-![Workflow](images/workflow.png)
+<img src="images/workflow.png" alt="Workflow Diagram" width="600">
 
 ## Evaluation Metrics
 - Accuracy, Precision, Recall, F1-Score
