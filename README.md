@@ -1,5 +1,5 @@
 # Breast-Cancer-Classification
-Mammogram Breast Cancer Classification Using Gray-Level Co-Occurrence Matrix and Support Vector Machine
+A Comparative Study of SVM, CNN, and Transformer Models on the CBIS-DDSM Dataset
 
 ## Overview
 This project focuses on classifying breast cancer using mammogram images from the CBIS-DDSM dataset. The study implements:
@@ -42,6 +42,10 @@ The CBIS-DDSM (Curated Breast Imaging Subset of the Digital Database for Screeni
 #### Model 3: Residual Neural Network (ResNet)
 - ResNet architecture for robust feature extraction
 - Residual connections improve gradient flow and learning stability
+
+## Workflow
+This is the workflow diagram for the breast cancer classification process:
+
 
 ## Evaluation Metrics
 - Accuracy, Precision, Recall, F1-Score
