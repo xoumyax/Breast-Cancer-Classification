@@ -2,17 +2,19 @@
 
 **Classifying mammograms as benign or malignant on the CBIS-DDSM dataset, comparing texture-feature SVMs with deep convolutional networks.**
 
-**Author:** Jen Li Kao
-
 <div align="center">
 <table>
   <tr>
     <th>GLCM + SVM pipeline</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/workflow.png" width="520" alt="GLCM and SVM workflow"></td>
+  </tr>
+  <tr>
     <th>Residual CNN (Xception)</th>
   </tr>
   <tr>
-    <td align="center"><img src="images/workflow.png" width="289" alt="GLCM and SVM workflow"></td>
-    <td align="center"><img src="images/xception_architecture.png" width="390" alt="Xception residual network architecture"></td>
+    <td align="center"><img src="images/xception_architecture.png" width="640" alt="Xception residual network architecture"></td>
   </tr>
 </table>
 </div>
