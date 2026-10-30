@@ -48,7 +48,7 @@ The project focuses in particular on how **feature normalization** and the **GLC
 
 - Reproducing the published GLCM + SVM setup gave only **50 %** accuracy, far below the paper's figures
 - Yeo-Johnson normalization made the SVM the most stable, but held-out accuracy stayed at **0.52–0.57**, showing texture statistics alone separate the two classes poorly
-- The tuned residual CNN reached **0.80 / 0.78** validation accuracy, clearly ahead of every classical model
+- The final residual CNN reached **0.91** validation accuracy (earlier tuned configurations: 0.80 / 0.78), clearly ahead of every classical model
 
 ---
 
@@ -160,7 +160,9 @@ Hyperparameter configurations (accuracy for the left and right models):
 | 3 | Dynamic learning rate | 0.84 / 0.65 | 0.63 / 0.53 |
 | **4** | **Original setup with grid search** | **0.89 / 0.80** | **0.80 / 0.78** |
 
-Configuration 1 shows clear overfitting (training accuracy 1.00 on the right model, validation 0.51). The tuned original setup generalizes best.
+Configuration 1 shows clear overfitting (training accuracy 1.00 on the right model, validation 0.51). The tuned original setup generalizes best among these configurations.
+
+A later, more stable training run of the Xception model raised validation accuracy to **0.91**, which is the final result reported for this project.
 
 ---
 
